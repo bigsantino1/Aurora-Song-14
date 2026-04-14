@@ -1,0 +1,5 @@
+- type: latheRecipePack
+  id: ConsentProjectors
+  recipes:
+  - HoloprojectorNSFW
+  - HoloprojectorPrivate
