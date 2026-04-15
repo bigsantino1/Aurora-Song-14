@@ -3,11 +3,12 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: latheRecipe
+  parent: BaseToolRecipe
   id: BaseHoloprojector
-  completetime: 2
+  completetime: 8
   materials:
-    Plastic: 250
-    Glass: 200
+    Glass: 250
+    Plastic: 150
 
 - type: latheRecipe
   parent: BaseHoloprojector
