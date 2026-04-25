@@ -136,6 +136,12 @@ public sealed partial class TriggerSystem
         TriggerOnMobstateChangeComponent component,
         ImplantRelayEvent<ReTriggerRattleImplantEvent> args)
     {
+        // TODO: move this out of MobState after Trigger Refactor
+        // Coyote Bandaid fix moved here | Aurora
+        if (!TryComp<MobStateComponent>(args.Event.Implanted, out var mobstate)
+            || mobstate.CurrentState == MobState.Alive)
+            return;
+
         TryRunTrigger(
             uid,
             component,
