@@ -7,10 +7,14 @@
   sprites: MobGoblinSprites
   markingLimits: MobGoblinMarkingLimits
   dollPrototype: MobGoblinDummy
-  skinColoration: HumanToned #Possible values: TintedHues, Hues, HumanToned
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesGoblinFirstMale
   femaleFirstNames: NamesGoblinFirstFemale
   lastNames: NamesGoblinLast
+  # Aurora Song: Add scale limiters. They are Small
+  maxHeight: 0.85
+  maxWidth: 0.85
+  #Aurora song changes end
 
 - type: speciesBaseSprites
   id: MobGoblinSprites
