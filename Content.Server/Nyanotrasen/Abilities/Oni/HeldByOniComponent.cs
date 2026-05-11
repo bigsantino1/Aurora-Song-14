@@ -10,5 +10,7 @@ namespace Content.Server.Abilities.Oni
         public double maxAngleAdded = 0.0;
         public double angleIncreaseAdded = 0.0;
         // End Frontier
+
+        public float attackRateAdded = 0.0F;
     }
 }

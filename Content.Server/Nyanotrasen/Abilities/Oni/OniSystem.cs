@@ -5,6 +5,8 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Wieldable.Components;
 using Content.Shared._NF.Weapons.Components;
+using Content.Shared.Weapons.Melee;
+using Content.Shared.Weapons.Melee.Components;
 using Robust.Shared.Containers;
 
 namespace Content.Server.Abilities.Oni
@@ -12,8 +14,9 @@ namespace Content.Server.Abilities.Oni
     public sealed class OniSystem : EntitySystem
     {
         [Dependency] private readonly SharedGunSystem _gunSystem = default!;
+        [Dependency] private readonly SharedMeleeWeaponSystem _meleeSystem = default!;
 
-        private const double GunInaccuracyFactor = 17.0; // Frontier (20x<18x -> 10% buff)
+
 
         public override void Initialize()
         {
@@ -37,15 +40,15 @@ namespace Content.Server.Abilities.Oni
                 if (TryComp<GunWieldBonusComponent>(args.Entity, out var bonus) && HasComp<WieldableComponent>(args.Entity))
                 {
                     //GunWieldBonus values are stored as negative.
-                    heldComp.minAngleAdded = (gun.MinAngle + bonus.MinAngle) * GunInaccuracyFactor;
-                    heldComp.angleIncreaseAdded = (gun.AngleIncrease + bonus.AngleIncrease) * GunInaccuracyFactor;
-                    heldComp.maxAngleAdded = (gun.MaxAngle + bonus.MaxAngle) * GunInaccuracyFactor;
+                    heldComp.minAngleAdded = (gun.MinAngle + bonus.MinAngle) * component.GunInaccuracyFactor;
+                    heldComp.angleIncreaseAdded = (gun.AngleIncrease + bonus.AngleIncrease) * component.GunInaccuracyFactor;
+                    heldComp.maxAngleAdded = (gun.MaxAngle + bonus.MaxAngle) * component.GunInaccuracyFactor;
                 }
                 else
                 {
-                    heldComp.minAngleAdded = gun.MinAngle * GunInaccuracyFactor;
-                    heldComp.angleIncreaseAdded = gun.AngleIncrease * GunInaccuracyFactor;
-                    heldComp.maxAngleAdded = gun.MaxAngle * GunInaccuracyFactor;
+                    heldComp.minAngleAdded = gun.MinAngle * component.GunInaccuracyFactor;
+                    heldComp.angleIncreaseAdded = gun.AngleIncrease * component.GunInaccuracyFactor;
+                    heldComp.maxAngleAdded = gun.MaxAngle * component.GunInaccuracyFactor;
                 }
 
                 gun.MinAngle += heldComp.minAngleAdded;
@@ -54,14 +57,23 @@ namespace Content.Server.Abilities.Oni
                 _gunSystem.RefreshModifiers(args.Entity); // Make sure values propagate to modified values (this also dirties the gun for us)
                 // End Frontier
             }
+
+            if (TryComp<MeleeWeaponComponent>(args.Entity, out var meleeComp))
+            {
+                heldComp.attackRateAdded = meleeComp.AttackRate * component.MeleeSwingSpeedMultipler;
+                meleeComp.AttackRate += heldComp.attackRateAdded;
+            }
         }
 
         private void OnEntRemoved(EntityUid uid, OniComponent component, EntRemovedFromContainerMessage args)
         {
+            if (!TryComp<HeldByOniComponent>(args.Entity, out var heldComp))
+                return;
+
             // Frontier: angle manipulation stored in HeldByOniComponent
             // Frontier: Oni-friendly "guns" (crusher)
-            if (TryComp<GunComponent>(args.Entity, out var gun) &&
-                TryComp<HeldByOniComponent>(args.Entity, out var heldComp) && !HasComp<NFOniFriendlyGunComponent>(args.Entity))
+            if (TryComp<GunComponent>(args.Entity, out var gun)
+                && !HasComp<NFOniFriendlyGunComponent>(args.Entity))
             {
                 gun.MinAngle -= heldComp.minAngleAdded;
                 gun.AngleIncrease -= heldComp.angleIncreaseAdded;
@@ -69,6 +81,11 @@ namespace Content.Server.Abilities.Oni
                 _gunSystem.RefreshModifiers(args.Entity); // Make sure values propagate to modified values (this also dirties the gun for us)
             }
             // End Frontier
+
+            if (TryComp<MeleeWeaponComponent>(args.Entity, out var meleeComp))
+            {
+                meleeComp.AttackRate -= heldComp.attackRateAdded;
+            }
 
             RemComp<HeldByOniComponent>(args.Entity);
         }
