@@ -33,24 +33,6 @@
 
 - type: entity
   parent: BaseIndicatorHoloprojector
-  id: HoloprojectorNSFW
-  name: nsfw holobarrier projector
-  description: Creates a holographic barrier indicating an NSFW area.
-  components:
-  - type: Sprite
-    sprite: _DEN/Objects/Devices/Holoprojectors/adult.rsi
-    state: icon
-  - type: LabelableHolosignProjector
-    signProto: HolosignNSFW
-    isNSFW: true
-    usesCharges: true
-    signWhitelist:
-      components:
-      - Holobarrier
-      - LabeledHolosign
-
-- type: entity
-  parent: BaseIndicatorHoloprojector
   id: HoloprojectorPrivate
   name: private holobarrier projector
   description: Creates a holographic barrier indicating a private area.

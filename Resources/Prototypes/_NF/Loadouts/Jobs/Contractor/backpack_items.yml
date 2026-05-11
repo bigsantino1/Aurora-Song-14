@@ -66,13 +66,6 @@
 # Aurora Song- Mantis drip merge end
 
 - type: loadout
-  id: ContractorHoloprojectorNSFW
-  price: 200
-  storage:
-    back:
-    - HoloprojectorNSFW
-
-- type: loadout
   id: ContractorHoloprojectorPrivate
   price: 200
   storage:

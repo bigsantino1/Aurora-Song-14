@@ -13,10 +13,5 @@
 
 - type: latheRecipe
   parent: BaseHoloprojector
-  id: HoloprojectorNSFW
-  result: HoloprojectorNSFW
-
-- type: latheRecipe
-  parent: BaseHoloprojector
   id: HoloprojectorPrivate
   result: HoloprojectorPrivate

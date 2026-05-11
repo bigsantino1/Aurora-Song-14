@@ -31,19 +31,6 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  id: HolosignNSFW
-  parent: [ BaseIndicatorHolosign, BaseHolosign ]
-  name: nsfw holographic barrier
-  description: A barrier of hard light that indicates an area where adult activities are occurring.
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _DEN/Structures/Holo/adult.rsi
-    state: icon
-    drawdepth: Overdoors
-
-- type: entity
   id: HolosignPrivate
   parent: [ BaseIndicatorHolosign, BaseHolosign ]
   name: private holographic barrier
