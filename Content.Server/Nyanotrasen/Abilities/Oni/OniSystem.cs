@@ -6,7 +6,6 @@ using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Wieldable.Components;
 using Content.Shared._NF.Weapons.Components;
 using Content.Shared.Weapons.Melee;
-using Content.Shared.Weapons.Melee.Components;
 using Robust.Shared.Containers;
 
 namespace Content.Server.Abilities.Oni
@@ -14,9 +13,6 @@ namespace Content.Server.Abilities.Oni
     public sealed class OniSystem : EntitySystem
     {
         [Dependency] private readonly SharedGunSystem _gunSystem = default!;
-        [Dependency] private readonly SharedMeleeWeaponSystem _meleeSystem = default!;
-
-
 
         public override void Initialize()
         {
@@ -83,9 +79,7 @@ namespace Content.Server.Abilities.Oni
             // End Frontier
 
             if (TryComp<MeleeWeaponComponent>(args.Entity, out var meleeComp))
-            {
                 meleeComp.AttackRate -= heldComp.attackRateAdded;
-            }
 
             RemComp<HeldByOniComponent>(args.Entity);
         }
