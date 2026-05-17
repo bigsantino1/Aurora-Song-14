@@ -40,6 +40,28 @@
   - sprite: _EE/Mobs/Customization/Tajaran/tail_markings.rsi
     state: tail_anim_rings
 
+- type: marking
+  id: TajaranLeoTail # Aurora's Song - hidden because it's set by wagging
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Tajaran]
+  sprites:
+  - sprite: _EE/Mobs/Customization/Tajaran/leotail.rsi
+    state: leopard_primary
+  - sprite: _EE/Mobs/Customization/Tajaran/leotail.rsi
+    state: leopard_tertiary
+
+- type: marking
+  id: TajaranLeoTailAnimated # Aurora's Song - Support wagging
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [] #Aurora's song wagging support
+  sprites:
+  - sprite: _EE/Mobs/Customization/Tajaran/leotail.rsi
+    state: leotailanim_primary
+  - sprite: _EE/Mobs/Customization/Tajaran/leotail.rsi
+    state: leotailanim_secondary
+
 # Tajaran Ears
 
 - type: marking

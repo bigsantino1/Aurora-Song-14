@@ -2,7 +2,7 @@
   # Onis
 
   <Box>
-    <GuideEntityEmbed Entity="MobOniDummy" Caption=""/>
+    <GuideEntityEmbed Entity="MobOni" Caption=""/>
   </Box>
 
   Large, horned people that come in a variety of colors. Due to their unique eye structure they aren't able to properly aim most firearms and opt to hip fire them instead. Their physical strength brings them a lot of boons both in and out of combat.
