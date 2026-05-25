@@ -85,9 +85,6 @@
       thresholds:
         0: Alive
         165: Dead
-    - type: CanEnterCryostorage # Goobstation
-    - type: StatusIcon # Goobstation
-      bounds: -0.5,-0.5,0.5,0.5
     - type: Icon
       sprite: _EE/Mobs/Species/IPC/parts.rsi
       state: full
