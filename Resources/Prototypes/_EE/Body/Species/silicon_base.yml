@@ -50,8 +50,44 @@
       heatDamage:
         types:
           Heat: 2 # DeltaV - was 3
+    - type: HealthExaminable
+      examinableTypes:
+        - Blunt
+        - Slash
+        - Piercing
+        - Heat
+        - Shock
+    - type: StatusEffects
+      allowed:
+        - Stun
+        - KnockedDown
+        - SlowedDown
+        - Stutter
+        - SeeingRainbows
+        - Electrocution
+        - SlurredSpeech
+        - PressureImmunity
+        - Muted
+        - TemporaryBlindness
+        - Pacified
+        - Flashed # Goobstation
+    - type: LightningTarget
+      priority: 1
+      lightningExplode: false
     - type: Deathgasp
       prototype: SiliconDeathgasp
+      needsCritical: false
+    - type: MobState
+      allowedStates:
+        - Alive
+        - Dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        165: Dead
+    - type: CanEnterCryostorage # Goobstation
+    - type: StatusIcon # Goobstation
+      bounds: -0.5,-0.5,0.5,0.5
     - type: Icon
       sprite: _EE/Mobs/Species/IPC/parts.rsi
       state: full
