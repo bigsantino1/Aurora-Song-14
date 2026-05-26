@@ -120,5 +120,7 @@
     - type: FireVisuals
       alternateState: Standing
     - type: StunVisuals
+    - type: Blindable
     - type: ToggleUndergarment # Aurora's Song - Add undergarment toggle
     - type: Carriable # Aurora's Song - Move carriable to species base
+
