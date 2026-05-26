@@ -96,7 +96,7 @@
   id: MobIPC
   name: Urist McPositronic
   description: A positronic brain in a metal body.
-  components:
+  components: # Aurora's Song - Components cleaned up for the nubody changes to silicon_base
   - type: PowerCellSlot
     cellSlotId: cell_slot
     fitsInCharger: true

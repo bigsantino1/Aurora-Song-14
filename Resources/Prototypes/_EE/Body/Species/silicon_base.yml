@@ -1,7 +1,7 @@
 - type: entity
   save: false
   id: PlayerSiliconHumanoidBase
-  parent: # Aurora's Song - Make formatting similar to base.yml
+  parent: # Aurora's Song - Reformated to use species_base. In line with nubody changes.
   - BaseSpeciesMob
   - MobAtmosExposed
   - MobFlammable
@@ -21,10 +21,6 @@
       damageContainer: HumanoidSilicon # DeltaV - change from Silicon
       damageModifierSet: IPC
     - type: ZombieImmune
-    # - type: Recyclable
-    #   safe: false
-    # - type: EyeProtection # You'll want this if your robot can't wear glasses, like an IPC.
-    #   protectionTime: 12
     - type: Silicon
       entityType: enum.SiliconType.Player
       batteryPowered: false # Needs to also have a battery!
