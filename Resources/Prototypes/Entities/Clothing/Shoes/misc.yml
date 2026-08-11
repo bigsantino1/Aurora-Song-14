@@ -210,6 +210,7 @@
     - state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jumpboots.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: JumpAbility
     jumpDistance: 4
     jumpSound: /Audio/Effects/stealthoff.ogg

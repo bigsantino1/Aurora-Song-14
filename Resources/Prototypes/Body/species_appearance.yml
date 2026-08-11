@@ -21,8 +21,11 @@
     # Underwear & clothing
     - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-#   - map: ["jumpsuit"]
+#   - map: ["jumpsuit"] # AS: Layer Reordering
 
+    # Aurora's Song Layer Reordering
+    # overlayJumpsuit = Skirts/Dresses, anything where the perspective has the innerClothing in the front.
+    # Boots = For anything you'd want to show up in front of a jumpsuit like cowboy or thigh high boots.
     - map: [ "enum.HumanoidVisualLayers.LFoot" ]
     - map: [ "enum.HumanoidVisualLayers.RFoot" ]
     - map: [ "shoes" ]
@@ -31,8 +34,8 @@
     - map: [ "overlayJumpsuit" ]
 
     # Extremities
-#   - map: [ "enum.HumanoidVisualLayers.LFoot" ]
-#   - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+#   - map: [ "enum.HumanoidVisualLayers.LFoot" ] # AS: Layer Reordering
+#   - map: [ "enum.HumanoidVisualLayers.RFoot" ] # AS: Layer Reordering
     - map: [ "enum.HumanoidVisualLayers.LHand" ]
     - map: [ "enum.HumanoidVisualLayers.RHand" ]
 
@@ -41,7 +44,7 @@
 
     # More equipment
     - map: [ "gloves" ]
-#   - map: [ "shoes" ]
+#   - map: [ "shoes" ] # AS: Layer Reordering
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]

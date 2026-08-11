@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformSkirtBase
   id: UniformSchoolgirlRed
   name: red schoolgirl uniform
   description: Ready for school!
@@ -80,7 +80,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Costume/Schoolgirl/purple.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformSkirtBase
   id: UniformMaid
   name: maid uniform
   description: Authentic, from Space France!
@@ -91,7 +91,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Costume/maid.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformSkirtBase
   id: UniformGeisha
   name: geisha dress
   description: For a good hostess.

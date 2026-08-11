@@ -55,7 +55,7 @@
           - Knife
           - Sidearm
   - type: Clothing
-    spriteLayerOverride: "boots"
+    spriteLayerOverride: "boots" # AS: Layer Reordering
 
 - type: entity
   abstract: true
@@ -76,3 +76,5 @@
   - type: TemperatureProtection
     heatingCoefficient: 1.025
     coolingCoefficient: 0.5
+  - type: Clothing
+    spriteLayerOverride: "boots" # AS: Layer Reordering
