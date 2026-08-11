@@ -61,6 +61,7 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+    spriteLayerOverride: "overlayJumpsuit"
 
 - type: entity
   abstract: true

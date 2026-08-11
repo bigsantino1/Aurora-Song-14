@@ -21,20 +21,27 @@
     # Underwear & clothing
     - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
+#   - map: ["jumpsuit"]
+
+    - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+    - map: [ "shoes" ]
+    - map: [ "jumpsuit" ]
+    - map: [ "boots" ]
+    - map: [ "overlayJumpsuit" ]
 
     # Extremities
-    - map: ["enum.HumanoidVisualLayers.LFoot"]
-    - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
+#   - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+#   - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.LHand" ]
+    - map: [ "enum.HumanoidVisualLayers.RHand" ]
 
     # Stuff that goes over the body but below equipment
-    - map: ["enum.HumanoidVisualLayers.Overlay"]
+    - map: [ "enum.HumanoidVisualLayers.Overlay" ]
 
     # More equipment
     - map: [ "gloves" ]
-    - map: [ "shoes" ]
+#   - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]

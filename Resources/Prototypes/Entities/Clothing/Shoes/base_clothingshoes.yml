@@ -54,6 +54,8 @@
           tags:
           - Knife
           - Sidearm
+  - type: Clothing
+    spriteLayerOverride: "boots"
 
 - type: entity
   abstract: true

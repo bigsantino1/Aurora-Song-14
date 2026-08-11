@@ -25,6 +25,13 @@ public sealed partial class ClothingComponent : Component
     [DataField]
     public string? MappedLayer;
 
+    /// <summary>
+    /// Used to set a specific sprite layer instead of the slot of the clothing.
+    /// </summary>
+    [DataField]
+    [Access(typeof(ClothingSystem))]
+    public string? SpriteLayerOverride; // Aurora's Song: Layer Reordering
+
     [DataField]
     public bool QuickEquip = true;
 

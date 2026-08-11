@@ -280,6 +280,10 @@ public sealed partial class ClientClothingSystem : ClothingSystem
             return;
         }
 
+        // Aurora's Song: Layer Reordering
+        if (clothingComponent.SpriteLayerOverride != null)
+            slot = clothingComponent.SpriteLayerOverride;
+
         // temporary, until layer draw depths get added. Basically: a layer with the key "slot" is being used as a
         // bookmark to determine where in the list of layers we should insert the clothing layers.
         var bookmarkSlot = slot == "neck2" ? "neck" : slot; // Aurora's Song: neck2 shares neck bookmark

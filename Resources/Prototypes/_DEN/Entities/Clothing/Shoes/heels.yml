@@ -5,17 +5,11 @@
 - type: entity
   abstract: true
   id: ClothingShoesBaseHeelStocking
-  parent: ClothingShoesHighheelBoots # prior parent doesn't exist on our fork, relies on deprecated use of HideLayerClothing component. | Aurora Song
+  parent: ClothingShoesBase
   components:
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
-  - type: HideLayerClothing
-    slots:
-    - RFoot
-    - LFoot
-    - RLeg
-    - LLeg
 
 - type: entity
   parent: ClothingShoesBaseHeelStocking

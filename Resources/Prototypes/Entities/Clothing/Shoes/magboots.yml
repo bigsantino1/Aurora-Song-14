@@ -12,6 +12,7 @@
       map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots.rsi
+    spriteLayerOverride: "boots"
   - type: ToggleClothing
     action: ActionToggleMagboots
     mustEquip: false
