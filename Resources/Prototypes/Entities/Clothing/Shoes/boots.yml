@@ -8,6 +8,7 @@
     sprite: Clothing/Shoes/Boots/workboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/workboots.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: Matchbox
 
 - type: entity
@@ -34,6 +35,7 @@
     sprite: Clothing/Shoes/Boots/explorer.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/explorer.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: Matchbox
 
 - type: entity
@@ -46,6 +48,7 @@
     sprite: Clothing/Shoes/Boots/performer.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/performer.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
 
 - type: entity
   parent: [ClothingShoesMilitaryBase, BaseC1Contraband] # Frontier: BaseSecurityContraband<BaseC1Contraband

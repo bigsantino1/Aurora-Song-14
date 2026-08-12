@@ -11,6 +11,7 @@
       map: [ "enum.ToggleableVisuals.Layer" ] # Frontier: Enum changes from Wizden#35341
   - type: Clothing
     sprite: _NF/Clothing/Shoes/Boots/moonboots.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: NFMoonBoots
   - type: StaticPrice
     price: 75

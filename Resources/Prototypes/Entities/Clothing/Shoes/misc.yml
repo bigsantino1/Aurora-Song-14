@@ -128,6 +128,7 @@
     sprite: Clothing/Shoes/Misc/snakeskin.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Misc/snakeskin.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
 
 - type: entity
   parent: [ClothingShoesBase, PowerCellSlotSmallItem, BaseToggleClothing]
@@ -142,6 +143,7 @@
       map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Clothing
     sprite: Clothing/Shoes/Boots/speedboots.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: ToggleClothing
     action: ActionToggleSpeedBoots
   # Aurora Song: Deduplicated speed modifiers to avoid duplicate keys

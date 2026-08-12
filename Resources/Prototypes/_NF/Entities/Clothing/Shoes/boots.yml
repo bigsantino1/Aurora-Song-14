@@ -8,6 +8,7 @@
     sprite: _NF/Clothing/Shoes/Boots/pilot.rsi
   - type: Clothing
     sprite: _NF/Clothing/Shoes/Boots/pilot.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: Matchbox
 
 - type: entity
@@ -42,6 +43,7 @@
     sprite: _NF/Clothing/Shoes/Boots/pirate.rsi
   - type: Clothing
     sprite: _NF/Clothing/Shoes/Boots/pirate.rsi
+    spriteLayerOverride: "boots" # AS: Layer Reordering
   - type: Matchbox
 
 - type: entity
