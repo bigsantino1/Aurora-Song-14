@@ -21,10 +21,12 @@
 #      range: 500
     - type: TriggerOnMobstateChange
       mobState:
+      - Alive # Aurora's Song
       - Critical
       - Dead
     - type: RattleOnTrigger
-      radioChannel: "Medical"
+      radioChannel: # Aurora's Song - Changed to a list
+      - Medical
 
 - type: entity
   parent: BaseSubdermalImplant
@@ -47,10 +49,12 @@
 #      range: 500
     - type: TriggerOnMobstateChange
       mobState:
+      - Alive # Aurora's Song
       - Critical
       - Dead
     - type: RattleOnTrigger
-      radioChannel: "Freelance"
+      radioChannel: # Aurora's Song - Changed to a list
+      - Freelance
 
 - type: entity
   parent: BaseSubdermalImplant

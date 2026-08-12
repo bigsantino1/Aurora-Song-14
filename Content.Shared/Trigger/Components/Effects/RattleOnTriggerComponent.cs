@@ -16,7 +16,7 @@ public sealed partial class RattleOnTriggerComponent : BaseXOnTriggerComponent
     /// The radio channel the message will be sent to.
     /// </summary>
     [DataField]
-    public ProtoId<RadioChannelPrototype> RadioChannel = "Syndicate";
+    public List<ProtoId<RadioChannelPrototype>> RadioChannel = new() { "Syndicate" }; // Aurora's Song - Changed to a list
 
     /// <summary>
     /// The message to be send depending on the target's current mob state.
@@ -25,7 +25,8 @@ public sealed partial class RattleOnTriggerComponent : BaseXOnTriggerComponent
     public Dictionary<MobState, LocId> Messages = new()
     {
         {MobState.Critical, "deathrattle-implant-critical-message"},
-        {MobState.Dead, "deathrattle-implant-dead-message"} // Aurora's Song: Reverted these to the older, more informative locale
+        {MobState.Dead, "deathrattle-implant-dead-message"}, // Aurora's Song: Reverted these to the older, more informative locale
+        {MobState.Alive, "deathrattle-implant-revived-message"} // Aurora's Song - Add revival messages too
     };
 
     // Aurora's Song.
@@ -41,7 +42,7 @@ public sealed partial class RattleOnTriggerComponent : BaseXOnTriggerComponent
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public TimeSpan NextTrigger = TimeSpan.Zero;
-    
+
     // Aurora's Song.
     /// <summary>
     /// The delay between implant retriggers.

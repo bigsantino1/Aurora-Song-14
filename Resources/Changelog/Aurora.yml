@@ -2880,3 +2880,113 @@ Entries:
   id: 9709
   time: '2026-08-08T00:54:34.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1377
+- author: astral_amy
+  changes:
+    - type: Add
+      message: Some new remnants of the Clockwork Cult might show up in their ruins.
+    - type: Tweak
+      message: Resprited the clockwork shield.
+  id: 9710
+  time: '2026-08-08T04:31:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1369
+- author: Vandanna
+  changes:
+    - type: Add
+      message: Triage Medical channel
+    - type: Tweak
+      message: Med comm range lowered to match shortband
+    - type: Add
+      message: Triage Medical and Prison Implant/ Implanters
+    - type: Tweak
+      message: Medical Implanter is removable
+  id: 9711
+  time: '2026-08-08T08:04:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1383
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: Now only medics can speak on Medical
+  id: 9712
+  time: '2026-08-08T09:50:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1384
+- author: ZigTag
+  changes:
+    - type: Add
+      message: Consent toggle for Hauntings (defaults on)
+  id: 9713
+  time: '2026-08-08T22:26:54.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1386
+- author: avosirenfal
+  changes:
+    - type: Fix
+      message: predicted system ticks were not reliably using random values
+  id: 9714
+  time: '2026-08-09T18:33:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1389
+- author: ZigTag
+  changes:
+    - type: Add
+      message: armblade trait
+  id: 9715
+  time: '2026-08-10T05:34:00.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1387
+- author: Sere
+  changes:
+    - type: Fix
+      message: Fixed legs slot visual layering.
+  id: 9716
+  time: '2026-08-10T05:50:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1393
+- author: resetium
+  changes:
+    - type: Add
+      message: >-
+        3 new traits to control how strongly alcohol affects your character.
+        Drink responsibly!
+  id: 9717
+  time: '2026-08-10T06:41:20.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1371
+- author: Laeras
+  changes:
+    - type: Add
+      message: deathrattle implants now notify on revival
+  id: 9718
+  time: '2026-08-10T07:32:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1395
+- author: Laeras
+  changes:
+    - type: Add
+      message: >-
+        Medics rejoice! the Crit tracker cartridge is now purchasable in the
+        Medic Gear vend in PB, spawns by default in the medic PDA, and plays
+        your ringtone whenever the crew blows themselves up again!
+    - type: Add
+      message: The crit tracker cartridge has a mute button now!
+    - type: Add
+      message: The PDA has a volume setting now!
+  id: 9719
+  time: '2026-08-10T09:19:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1368
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added new emote sounds for Moths, Arachnids, and Vox, from Impstation!
+    - type: Tweak
+      message: Allulalo hissing sounds adjusted slightly.
+  id: 9720
+  time: '2026-08-10T09:23:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1390
+- author: snaviian
+  changes:
+    - type: Add
+      message: Most cakes have been redecorated!
+  id: 9721
+  time: '2026-08-10T10:52:11.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1392
+- author: MetalGearSloth, ZigTag
+  changes:
+    - type: Add
+      message: Spacelight
+  id: 9722
+  time: '2026-08-10T11:35:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1397

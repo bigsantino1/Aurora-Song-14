@@ -102,10 +102,12 @@
     #   range: 500
     - type: TriggerOnMobstateChange
       mobState:
+      - Alive # Aurora's Song
       - Critical
       - Dead
     - type: RattleOnTrigger
-      radioChannel: "Sle" # Aurora Song - Changed from "Nfsd" to "Sle"
+      radioChannel: # Aurora's Song - Changed to a list
+      - Sle # Aurora Song - Changed from "Nfsd" to "Sle"
     # End Frontier: no sensor, add rattle
 
 #Traitor implants
@@ -377,6 +379,7 @@
         - MobState # admeme implanting a chair with rattle implant needs to give the chair mobstate so it can die first
     - type: TriggerOnMobstateChange
       mobState:
+      - Alive # Aurora's Song
       - Critical
       - Dead
     - type: RattleOnTrigger
@@ -429,4 +432,5 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: RattleOnTrigger
-    radioChannel: CentCom
+    radioChannel:
+    - CentCom # Aurora's Song - changed to a list
